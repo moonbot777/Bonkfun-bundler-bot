@@ -64,5 +64,5 @@ A high-performance Solana bot for automated transaction bundling, token creation
 This bot is intended for educational and research purposes. Use at your own risk. The authors are not responsible for any financial losses or misuse.
 
 ## Contact
-- Telegram: [@topsecretagent_007](https://t.me/topsecretagent_007)
-- Twitter: [@lendon1114](https://twitter.com/lendon1114)
+- Telegram: [@greenfoxfun](https://t.me/greenfoxfun)
+- Twitter: [@greenfoxworld](https://x.com/greenfoxworld)
