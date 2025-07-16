@@ -4,11 +4,11 @@ A high-performance Solana bot for automated transaction bundling, token creation
 
 ## Features
 - Automated creation and bundling of Solana transactions
-- - Uses 20 wallets by default for volume and distribution operations
-- - Token minting and distribution
-- - Volume generation via Raydium launchpad
-- - Jito MEV bundle execution
-- - Lookup Table (LUT) management for efficient transaction size
+- Uses 20 wallets by default for volume and distribution operations
+- Token minting and distribution
+- Volume generation via Raydium launchpad
+- Jito MEV bundle execution
+- Lookup Table (LUT) management for efficient transaction size
 - Written in TypeScript, using Solana and Raydium SDKs
 
 ## Requirements
