@@ -2,16 +2,6 @@ import { ComputeBudgetProgram, Connection, Keypair, LAMPORTS_PER_SOL, PublicKey,
 import {
   TOKEN_PROGRAM_ID,
   Account,
-  ASSOCIATED_TOKEN_PROGRAM_ID,
-  getAssociatedTokenAddressSync,
-  getAccount,
-  TokenAccountNotFoundError,
-  TokenInvalidAccountOwnerError,
-  createAssociatedTokenAccountInstruction,
-  TokenInvalidMintError,
-  TokenInvalidOwnerError,
-  createAssociatedTokenAccountIdempotentInstruction,
-  getAssociatedTokenAddress,
 } from "@solana/spl-token";
 import { DISTRIBUTE_WALLET_NUM } from "../constants";
 
