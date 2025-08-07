@@ -20,12 +20,16 @@ import {
   createSyncNativeInstruction
 } from '@solana/spl-token'
 import { initSdk } from '../utils/config'
-import { createBuyersAta } from './createAta'
+import { createBuyersAta, makeCreateMainAta } from './createAta'
 
-export const makeBuyTx = async (connection: Connection, mint: Keypair, buyerKps: Keypair[], lookupTableAddress: PublicKey) => {
+export const makeBuyTx = async (connection: Connection, mint: PublicKey, buyerKps: Keypair[], lookupTableAddress: PublicKey) => {
   console.log("🚀 ~ makeBuyTx ~ buyerKps:", buyerKps)
   try {
-    
+    const mainAta = await makeCreateMainAta(connection, mint, buyerKps[0]);
+    const buyersAta = await createBuyersAta(connection, mint, buyerKps[0].publicKey);
+    const mainAta = await makeCreateMainAta(connection, mint, buyerKps[1]);
+    const buyersAta = await createBuyersAta(connection, mint, buyerKps[1].publicKey);
+
 
   } catch (err) {
     console.error("makeBuyTx error", err);
