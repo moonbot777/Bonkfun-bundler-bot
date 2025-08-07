@@ -48,17 +48,6 @@ A high-performance Solana bot for automated transaction bundling, token creation
   ```env
   DISTRIBUTE_WALLET_NUM=20
   ```
-- **Other scripts:**
-  - `gather`: Collects and consolidates SOL from distributed wallets
-  - `closeLut`: Deactivates and closes Lookup Tables
-  - `closeWsol`: Closes wrapped SOL accounts
-
-  Example:
-  ```bash
-  yarn gather
-  yarn closeLut
-  yarn closeWsol
-  ```
 
 ## Disclaimer
 This bot is intended for educational and research purposes. Use at your own risk. The authors are not responsible for any financial losses or misuse.
